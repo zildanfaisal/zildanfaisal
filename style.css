@@ -1,0 +1,211 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Viga', sans-serif;
+}
+
+.header .jumbotron img {
+    margin-top: 190px;
+    width: 500px;
+    border-radius: 100px;
+}
+
+.jumbotron {
+    background-image: url(img/wallpaper.jpg);
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 1000;
+}
+
+.jumbotron .btn {
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.jumbotron .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.content h1 {
+    color: black;
+}
+
+.content .about img {
+    width: 500px;
+}
+
+.content .about .skill {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.content .about .html:hover {
+    background-color: orange;
+    color: white;
+}
+
+.content .about .css:hover {
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
+
+.content .about .php:hover {
+    background-color: rgb(87, 0, 128);
+    color: white;
+}
+
+.content .about .bootstrap:hover {
+    background-color: rgb(196, 0, 196);
+    color: white;
+}
+
+.content .about .mysql:hover {
+    background-color: rgb(5, 34, 199);
+    color: white;
+}
+
+.content .about .laravel:hover {
+    background-color: red;
+    color: white;
+}
+
+.portfolio p {
+    margin-top: 10px;
+}
+
+.portfolio .carousel-control-prev {
+    background-color: transparent;
+    border: none;
+}
+
+.portfolio .carousel-control-next {
+    background-color: transparent;
+    border: none;
+}
+
+.contact a {
+    color: violet;
+}
+
+.contact .card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Dekstop */
+@media (min-width: 992px) {
+
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid rgb(189, 189, 189);
+        width: 50%;
+        margin: auto;
+        padding-top: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 780px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 50px;
+        margin-top: 200px;
+    }
+
+    .contact {
+        font-size: 25px;
+    }
+
+    .contact h4 {
+        font-size: 30px;
+    }
+}
+
+.about h1::after {
+    content: '';
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.portfolio h1::after {
+    content: '';
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.contact h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer small {
+    color: #fff;
+}
